@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kedai Seblak Arina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kedai Seblak Arina</h1>
+        <p>Menikmati Seblak Pedas dan Nikmat</p>
+    </header>
+
+    <section id="menu">
+        <h2>Menu Kami</h2>
+        <ul>
+            <li>Seblak Original</li>
+            <li>Seblak Ceker</li>
+            <li>Seblak Sosis</li>
+            <li>Seblak Tahu Tempe</li>
+            <li>Kerupuk</li>
+            <li>Telur</li>
+        </ul>
+    </section>
+
+    <section id="keranjang">
+        <h2>Keranjang Pesanan</h2>
+        <ul id="order-list">
+            <!-- Pesanan akan ditampilkan di sini -->
+        </ul>
+        <button id="clear-cart">Kosongkan Keranjang</button>
+    </section>
+
+    <section id="informasi-pengguna">
+        <h2>Informasi Pengguna</h2>
+        <form id="user-form">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" required>
+
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </section>
+
+    <section id="whatsapp">
+        <h2>Hubungi Kami</h2>
+        <p>Untuk melakukan pemesanan, klik tombol WhatsApp di bawah ini:</p>
+        <a href="https://wa.me/6282322112781" id="whatsapp-link" class="whatsapp-button" target="_blank">Pesan di WhatsApp</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
