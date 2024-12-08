@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kedai Seblak Arina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Selamat datang di Kedai Seblak Arina!</h1>
-        <p>Menu seblak pilihan dengan berbagai topping, nikmati seblak sesuai selera Anda!</p>
+        <h1>Kedai Seblak Arina</h1>
+        <p>Menikmati Seblak Pedas dan Nikmat</p>
     </header>
-    
+
     <section id="menu">
         <h2>Menu Kami</h2>
         <ul>
-            <li><button class="menu-item" data-menu="Seblak Original">Seblak Original</button></li>
-            <li><button class="menu-item" data-menu="Seblak Ceker">Seblak Ceker</button></li>
-            <li><button class="menu-item" data-menu="Seblak Sosis">Seblak Sosis</button></li>
-            <li><button class="menu-item" data-menu="Seblak Tahu Tempe">Seblak Tahu Tempe</button></li>
-            <li><button class="menu-item" data-menu="Kerupuk">Kerupuk</button></li>
-            <li><button class="menu-item" data-menu="Telur">Telur</button></li>
+            <li>Seblak Original</li>
+            <li>Seblak Ceker</li>
+            <li>Seblak Sosis</li>
+            <li>Seblak Tahu Tempe</li>
+            <li>Kerupuk</li>
+            <li>Telur</li>
         </ul>
     </section>
 
@@ -29,52 +30,28 @@
         <ul id="order-list">
             <!-- Pesanan akan ditampilkan di sini -->
         </ul>
+        <button id="clear-cart">Kosongkan Keranjang</button>
     </section>
 
-    <section id="kontak">
+    <section id="informasi-pengguna">
+        <h2>Informasi Pengguna</h2>
+        <form id="user-form">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" required>
+
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </section>
+
+    <section id="whatsapp">
         <h2>Hubungi Kami</h2>
-        <p>Untuk pemesanan atau pertanyaan, hubungi kami melalui WhatsApp:</p>
-        <a href="https://wa.me/6282322112781" id="whatsapp-link" target="_blank" class="whatsapp-button">Pesan Sekarang</a>
+        <p>Untuk melakukan pemesanan, klik tombol WhatsApp di bawah ini:</p>
+        <a href="https://wa.me/6282322112781" id="whatsapp-link" class="whatsapp-button" target="_blank">Pesan di WhatsApp</a>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Kedai Seblak Arina. Semua Hak Dilindungi.</p>
-    </footer>
-<section id="menu">
-    <h2>Menu Kami</h2>
-    <ul>
-        <li>
-            Seblak Original
-            <input type="number" class="quantity" data-menu="Seblak Original" min="1" value="1">
-            <button class="menu-item" data-menu="Seblak Original">Tambah ke Keranjang</button>
-        </li>
-        <li>
-            Seblak Ceker
-            <input type="number" class="quantity" data-menu="Seblak Ceker" min="1" value="1">
-            <button class="menu-item" data-menu="Seblak Ceker">Tambah ke Keranjang</button>
-        </li>
-        <li>
-            Seblak Sosis
-            <input type="number" class="quantity" data-menu="Seblak Sosis" min="1" value="1">
-            <button class="menu-item" data-menu="Seblak Sosis">Tambah ke Keranjang</button>
-        </li>
-        <li>
-            Seblak Tahu Tempe
-            <input type="number" class="quantity" data-menu="Seblak Tahu Tempe" min="1" value="1">
-            <button class="menu-item" data-menu="Seblak Tahu Tempe">Tambah ke Keranjang</button>
-        </li>
-        <li>
-            Kerupuk
-            <input type="number" class="quantity" data-menu="Kerupuk" min="1" value="1">
-            <button class="menu-item" data-menu="Kerupuk">Tambah ke Keranjang</button>
-        </li>
-        <li>
-            Telur
-            <input type="number" class="quantity" data-menu="Telur" min="1" value="1">
-            <button class="menu-item" data-menu="Telur">Tambah ke Keranjang</button>
-        </li>
-    </ul>
-</section>
     <script src="script.js"></script>
 </body>
 </html>
