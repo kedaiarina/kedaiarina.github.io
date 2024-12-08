@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 .hero {
-    background: url('https://example.com/seblak-image.jpg') no-repeat center center;
+    background: url('https://api.betabotz.eu.org/api/tools/get-upload?id=f/mapilh8n.jpg') no-repeat center center;
     background-size: cover;
     height: 300px;
     text-align: center;
