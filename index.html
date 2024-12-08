@@ -3,42 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kedai Seblak Arina - Pesan Seblak Enak Lewat WhatsApp">
     <title>Kedai Seblak Arina</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f7f7f7;
             margin: 0;
             padding: 0;
+        }
+        header {
+            background-color: #FF5733;
+            color: white;
             text-align: center;
+            padding: 20px;
         }
         h1 {
-            color: #f44336;
+            margin: 0;
+            font-size: 40px;
         }
-        .content {
-            padding: 50px 20px;
+        h2 {
+            font-size: 24px;
+            margin-top: 5px;
         }
-        .whatsapp-button {
-            background-color: #25d366;
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .container p {
+            font-size: 20px;
+            color: #333;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
             color: white;
-            padding: 15px 25px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            padding: 15px 30px;
+            border-radius: 30px;
             text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            display: inline-block;
         }
-        .whatsapp-button:hover {
-            background-color: #128c7e;
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+        footer {
+            background-color: #FF5733;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Selamat Datang di Kedai Seblak Arina</h1>
-        <p>Pesan Seblak Enakmu Sekarang Lewat WhatsApp!</p>
-        <a href="https://wa.me/6282322112781" class="whatsapp-button" target="_blank">Pesan Sekarang</a>
+    <header>
+        <h1>Kedai Seblak Arina</h1>
+        <h2>Enak dan Pedas, Cuma di Arina!</h2>
+    </header>
+
+    <div class="container">
+        <p>Ingin memesan seblak lezat? Hubungi kami melalui WhatsApp!</p>
+        <a href="https://wa.me/6282322112781?text=Arina%2C%20saya%20mau%20beli%20seblak" class="whatsapp-btn" target="_blank">Pesan Seblak Lewat WhatsApp</a>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Kedai Seblak Arina. Semua hak cipta dilindungi.</p>
+    </footer>
 </body>
 </html>
