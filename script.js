@@ -68,7 +68,46 @@ function updateWhatsappLink() {
 const menuItems = document.querySelectorAll('.menu-item');
 const orderList = document.getElementById('order-list');
 const whatsappLink = document.getElementById('whatsapp-link');
+menuItems.forEach(item => {
+    item.addEventListener('click', function() {
+        const menuName = item.getAttribute('data-menu');
+        const quantityInput = document.querySelector(`.quantity[data-menu="${menuName}"]`);
+        const quantity = quantityInput ? parseInt(quantityInput.value) : 1;
+        
+        // Menambahkan item ke keranjang dengan jumlah
+        addToOrder(menuName, quantity);
+    });
+});
 
+function addToOrder(menuItem, quantity) {
+    // Menambahkan menu ke array pesanan dengan jumlah
+    for (let i = 0; i < quantity; i++) {
+        order.push(menuItem);
+    }
+
+    // Menampilkan pesanan di UI
+    const orderItem = document.createElement('li');
+    orderItem.textContent = `${menuItem} - ${quantity} pcs`;
+    
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'Hapus';
+    removeButton.classList.add('remove-item');
+    
+    removeButton.addEventListener('click', () => {
+        removeFromOrder(orderItem, menuItem, quantity);
+    });
+    
+    orderItem.appendChild(removeButton);
+    orderList.appendChild(orderItem);
+
+    updateWhatsappLink();
+}
+
+function removeFromOrder(orderItem, menuItem, quantity) {
+    order = order.filter(item => item !== menuItem);
+    orderItem.parentNode.removeChild(orderItem);
+    updateWhatsappLink();
+}
 // Array untuk menyimpan pesanan
 let order = [];
 
